@@ -29154,7 +29154,7 @@ $(document).ready(function () {
 /* 33 */
 /***/ (function(module, exports) {
 
-module.exports = "/app/assets/images/0xbitcoin.png";
+module.exports = "/app/assets/images/poweth512.png";
 
 /***/ }),
 /* 34 */
