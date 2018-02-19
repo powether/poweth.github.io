@@ -8,7 +8,9 @@
 
       <link rel="icon" type="image/png" href="https://powether.github.io/powether/app/assets/images/poweth512.png" />
 
-  <link href="./assets/main.css" rel="stylesheet"></head>
+  <link href="./assets/main.css" rel="stylesheet">
+  <link href="./assets/timeline.css" rel="stylesheet">
+  </head>
   <body>
 
 
@@ -71,7 +73,21 @@
       </section>
 
 
-      <div id="app">
+      <div id="dashboard" class="box has-text-centered has-small-text-mobile" style="overflow-x:auto; min-height:380px;">
+        <div class='subtitle has-text-centered'>System Stats</div>
+        <table class='table has-text-centered'>
+
+        <tbody>
+          <tr> <td> Address: <a :href='contractUrl' target="_blank"> {{ contractAddress }} </a>  </td> </tr>
+          <tr> <td> Total Supply:  {{ totalSupply }} / Circulating Supply: {{ amountMined }} </td> </tr>
+        <tr> <td> Mining Difficulty:  {{ difficulty }}</td></tr>
+        <tr> <td> Mining Challenge:  {{ challenge_number }}</td></tr>
+
+        <tr> <td> Last Reward To:  {{ lastRewardTo }}</td></tr>
+        <tr> <td> Last Reward Amount:  {{ lastRewardAmount }}</td></tr>
+        <tr> <td> Last Reward EthBlock#:  {{ lastRewardEthBlockNumber }}</td></tr>
+       </tbody>
+        </table>
 
       </div>
 
@@ -84,25 +100,38 @@
         </a>
       </div>
 
-      <div id="dashboard" class="box has-small-text-mobile" style="overflow-x:auto; min-height:480px;">
-        <div class='subtitle'>System Stats</div>
-        <table class='table'>
+      <div id="app">
+          <div class='subtitle has-text-centered'>Roadmap</div>
+      <div class="timeline">
+        <div class="container_time left_time">
+          <div class="content_time">
+            <h2>2018.02.18.</h2>
+            <p>Mainnet started, CPU miner released.</p>
+          </div>
+        </div>
+        <div class="container_time right_time">
+          <div class="content_time">
+            <h2>2018 Q1:</h2>
+            <p>Submission to ETH exchanges, Release Pool and GPU mining.</p>
+          </div>
+        </div>
+        <div class="container_time left_time">
+          <div class="content_time">
+            <h2>2018 Q2:</h2>
+            <p>More exchanges, Marketing campaings and partnerships with mining companies.<br>Extend the Token funcionality and adding mind blowing features(Possible Hard Fork)!</p>
+          </div>
+        </div> 
+        <div class="container_time right_time">
+          <div class="content_time">
+            <h2>After Serenity Ethereum fork:</h2>
+            <p>PoWEth will continue the Proof of Work distribution on ETH network. We will bring more people under the hood!</p>
+          </div>
+        </div>  
+      </div> 
+    </div>
+  </div>
 
-        <tbody>
-          <tr> <td> Network: MAINNET </td> </tr>
-          <tr> <td> Address: <a :href='contractUrl' target="_blank"> {{ contractAddress }} </a>  </td> </tr>
-          <tr> <td> Total Supply:  {{ totalSupply }} </td> </tr>
-          <tr> <td> Amount Mined:  {{ amountMined }}</td></tr>
-        <tr> <td> Mining Difficulty:  {{ difficulty }}</td></tr>
-        <tr> <td> Mining Challenge:  {{ challenge_number }}</td></tr>
 
-        <tr> <td> Last Reward To:  {{ lastRewardTo }}</td></tr>
-        <tr> <td> Last Reward Amount:  {{ lastRewardAmount }}</td></tr>
-        <tr> <td> Last Reward EthBlock#:  {{ lastRewardEthBlockNumber }}</td></tr>
-       </tbody>
-        </table>
-
-      </div>
 
       <div id="about" class="box has-text-centered">
 
