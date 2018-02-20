@@ -6520,20 +6520,20 @@ html {
   font-family: "Arial, Helvetica, sans-serif"; }
 
 a {
-  color: #ff7209; }
+  color: #357fed; }
 
 .acts-as-link {
   cursor: pointer; }
 
 .color-primary {
-  color: #ff7209; }
+  color: #357fed; }
 
 .button-primary {
   color: white;
-  background: linear-gradient(#ff7209, #ff6206); }
+  background: linear-gradient(#357fed, #357fed); }
 
 .button-secondary {
-  color: #ff7209;
+  color: #357fed;
   background: linear-gradient(#fff, #eee); }
 
 .button-bubble {
@@ -6550,10 +6550,37 @@ a {
     font-size: 10px; } }
 
 .orange-theme {
-  background-color: #ff7209; }
+  background-color: #357fed; }
   .orange-theme .color-primary {
     color: white; }
   .orange-theme .button-primary {
     color: white; }
   .orange-theme .button-secondary {
     color: black; }
+
+.features {
+  padding-top: 30px;
+}   
+
+.span-title {
+  font-size: 17px;
+  font-weight: bold;
+  padding-bottom:5px;
+}
+
+    .flex-container {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+
+    }
+    
+    .flex-container>div {
+      background-color: #f1f1f1;
+      margin: 10px;
+      padding:20px;
+      max-width: 300px;
+      box-shadow: 0 1px 2px #8c8c8c;
+      z-index: 2;
+      position: relative;
+    }

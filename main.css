@@ -6511,11 +6511,11 @@ html {
   font-family: 'Anton', sans-serif; }
 
 .color-orange {
-  color: #ff7209; }
+  color: #357fed; }
 
 .button-orange {
   color: white;
-  background: linear-gradient(#ff7209, #ff6206); }
+  background: linear-gradient(#357fed, #ff6206); }
 
 .button-bubble {
   padding: 8px;
