@@ -6579,8 +6579,12 @@ a {
       background-color: #f1f1f1;
       margin: 10px;
       padding:20px;
-      max-width: 300px;
       box-shadow: 0 1px 2px #8c8c8c;
       z-index: 2;
       position: relative;
+      min-width: 300px;
+    }
+
+    .small-flex {
+      max-width: 300px;
     }

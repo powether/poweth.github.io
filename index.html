@@ -63,34 +63,27 @@
              </p>
 
 
-             <div class="whitespace-sm"></div>
-
-             <a href="./wallet" target="_blank">
-               <div class='button-bubble button-white'>Open the POWE Wallet</div>
-             </a>
-          </div>
-
 
           <div class="features subtitle has-text-centered">Token features:</div>
 
           <div class="flex-container">
-              <div>
+              <div class="small-flex">
                   <span class="span-title">Open Source:</span>
                   <br>
                    Transparency is everything, PoWEth forked from <a href="https://github.com/0xbitcoin/">0xBitcoin</a>. All of our changes and development also can be found on <a href="https://github.com/powether">Github</a>. Feel free to contribute on both project.
               </div>
-            <div>
+            <div class="small-flex">
             <span class="span-title">Fair distribution:</span>
               <br>
             POWE started with a ninja start, no premine, no ICO, no DevFee. Only the mining rewards create the value.
             We believe Proof of Work is the best way to keep transparency and reward supporters by the time.
             </div>
-            <div>
+            <div class="small-flex">
             <span class="span-title">Ethereum blockhcain:</span>
              <br>
               As an ERC20 Token POWE can be used any time until the Ethereum blockchain is up. We created a real Web 3.0 application, the POWE is truely decentralized and can resist any directed attack attemp.
             </div>
-            <div>
+            <div class="small-flex">
                 <span class="span-title">Mining with responsibility:</span>
                 <br>
                  We do Love our planet, just like everyone. We use mining only for creating the Tokens, future usage or validation driven by the Ethereum blockchain. Our token is more efficient than classic blockchains.
@@ -105,30 +98,45 @@
 
 
       <div id="dashboard" class="box has-text-centered has-small-text-mobile" style="overflow-x:auto; min-height:380px;">
-        <div class='subtitle has-text-centered'>System Stats</div>
-        <table class='table has-text-centered'>
+        <div class='subtitle has-text-centered'>Network and Mining</div>
+        <div class="flex-container">  
+            <div>
+                <table class='table has-text-centered'>
+                <span class="span-title">Contract stats:</span>
+                <br>
+                <br>
+                <tbody>
+                  <tr> <td> Address: <a :href='contractUrl' target="_blank"> {{ contractAddress }} </a>  </td> </tr>
+                  <tr> <td> Total Supply:  {{ totalSupply }} / Circulating Supply: {{ amountMined }} </td> </tr>
+                <tr> <td> Mining Difficulty:  {{ difficulty }}</td></tr>
+                <tr> <td> Mining Challenge:  {{ challenge_number }}</td></tr>
 
-        <tbody>
-          <tr> <td> Address: <a :href='contractUrl' target="_blank"> {{ contractAddress }} </a>  </td> </tr>
-          <tr> <td> Total Supply:  {{ totalSupply }} / Circulating Supply: {{ amountMined }} </td> </tr>
-        <tr> <td> Mining Difficulty:  {{ difficulty }}</td></tr>
-        <tr> <td> Mining Challenge:  {{ challenge_number }}</td></tr>
+                <tr> <td> Last Reward To:  {{ lastRewardTo }}</td></tr>
+                <tr> <td> Last Reward Amount:  {{ lastRewardAmount }}</td></tr>
+                <tr> <td> Last Reward EthBlock#:  {{ lastRewardEthBlockNumber }}</td></tr>
+              </tbody>
+                </table>
+          </div> 
+              <div>
+                  <span class="span-title">Mining:</span>  
+                  <br>
+                  <br>
+                  <h3 class="left">Mining softwares:</h3>
+                  <p><a href="https://github.com/powether/PoWEth-miner/releases" target="_blank">
+                    PoWEth Miner
+                  </a>
+                </p>
+                <br>
+                <h3 class="left">Mining Pools:</h3>
+                  <p><a href="http://pool.poweth.org/" target="_blank">
+                    pool.powerth.org
+                  </a>
+                </p>
+                </div>   
 
-        <tr> <td> Last Reward To:  {{ lastRewardTo }}</td></tr>
-        <tr> <td> Last Reward Amount:  {{ lastRewardAmount }}</td></tr>
-        <tr> <td> Last Reward EthBlock#:  {{ lastRewardEthBlockNumber }}</td></tr>
-       </tbody>
-        </table>
+
 
       </div>
-
-      <div id="guide" class="box has-text-centered">
-        <div class='title'> Start Mining PoWEth </div>
-        <div class='subtitle '> Download the CPU Miner from Github </div>
-
-        <a href="https://github.com/powether/PoWEth-miner/releases" target="_blank">
-          <div class='button-bubble button-primary'>Download the PoWEth Miner</div>
-        </a>
       </div>
 
       <div id="app">
@@ -168,12 +176,14 @@
         <div class="">
           <p> Where you can find more: </p>
           <ul>
+              <li> <a href="http://pool.poweth.org">DevPool for Mining</a> </li>
             <li> <a href="https://bitcointalk.org/index.php?topic=2975189.msg30568161#msg30568161">Bitcointalk</a> </li>
             <li> <a href="https://www.reddit.com/r/poweth/">Reddit</a> </li>
             <li> <a href="https://forkdelta.github.io/#!/trade/0x2ee6d1a3ba4e80a61bdfb48a90d40a5cef455326-ETH">Forkdelta</a> </li>
             <li> <a href="https://dappradar.com/app/112/poweth">Dappradar</a> </li>
             <li> <a href="https://dapptrack.com/poweth.org">Dapptrack</a> </li>
             <li><a href="https://github.com/powether/PoWEth-token" target="_blank"> Github </a></li>
+            <li> <a href="./wallet">Metamask Wallet</a> </li>
           </ul>
 
         </div>
